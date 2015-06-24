@@ -1063,20 +1063,21 @@ header {
       display: inline-block; }
     /* line 16, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
     header .branding h1 {
-      margin-bottom: .31em; }
-      /* line 18, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+      margin-bottom: .31em;
+      margin-right: 0.3625em; }
+      /* line 19, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
       header .branding h1 span {
         color: #ccc; }
-    /* line 22, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+    /* line 23, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
     header .branding p {
       margin-top: 0;
       margin-bottom: 0.725em;
       color: #ccc; }
-  /* line 28, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+  /* line 29, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
   header nav {
     border-top: 4px solid #d80000; }
   @media screen and (min-width: 40em) {
-    /* line 32, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+    /* line 33, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
     header .branding {
       float: left;
       display: block;
@@ -1086,7 +1087,7 @@ header {
       header .branding:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 53.75em) {
-    /* line 37, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+    /* line 38, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
     header .branding {
       float: left;
       display: block;
@@ -1096,7 +1097,7 @@ header {
       header .branding:last-child {
         margin-right: 0; } }
 
-/* line 43, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+/* line 44, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
 main {
   max-width: 68em;
   margin-left: auto;
@@ -1106,42 +1107,54 @@ main {
     clear: both;
     content: "";
     display: table; }
-  /* line 45, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
-  main article {
+  /* line 46, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+  main article, main .contact, main .about {
     float: left;
     display: block;
     margin-right: 7.42297%;
     width: 100%;
     padding: 0 0.725em; }
     /* line 89, /Users/nickrttn/.rvm/gems/ruby-2.2.2/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
-    main article:last-child {
+    main article:last-child, main .contact:last-child, main .about:last-child {
       margin-right: 0; }
     @media screen and (min-width: 40em) {
-      /* line 45, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
-      main article {
+      /* line 46, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+      main article, main .contact, main .about {
         float: left;
         display: block;
         margin-right: 4.82916%;
         width: 100%; }
         /* line 89, /Users/nickrttn/.rvm/gems/ruby-2.2.2/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
-        main article:last-child {
+        main article:last-child, main .contact:last-child, main .about:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 53.75em) {
-      /* line 45, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
-      main article {
+      /* line 46, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+      main article, main .contact, main .about {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 48.82117%; }
         /* line 89, /Users/nickrttn/.rvm/gems/ruby-2.2.2/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
-        main article:last-child {
+        main article:last-child, main .contact:last-child, main .about:last-child {
           margin-right: 0; } }
-    /* line 54, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
-    main article .meta {
+    /* line 55, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+    main article .meta, main .contact .meta, main .about .meta {
       color: #ccc;
       font-size: 0.75em;
       text-transform: uppercase; }
-  /* line 60, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+  /* line 62, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+  main article img + .caption {
+    margin-bottom: 0; }
+  /* line 65, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+  main article p > img {
+    margin-bottom: 0; }
+  /* line 68, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+  main article .caption {
+    font-size: 0.75em;
+    text-align: center;
+    margin-top: 0;
+    font-style: italic; }
+  /* line 75, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
   main .summary {
     float: left;
     display: block;
@@ -1150,33 +1163,33 @@ main {
     /* line 89, /Users/nickrttn/.rvm/gems/ruby-2.2.2/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
     main .summary:last-child {
       margin-right: 0; }
-    /* line 62, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+    /* line 77, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
     main .summary h1 {
       margin-bottom: .3em; }
-      /* line 64, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+      /* line 79, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
       main .summary h1 a {
         color: #333; }
-        /* line 66, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+        /* line 81, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
         main .summary h1 a:hover, main .summary h1 a:focus {
           color: #d80000; }
-    /* line 71, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+    /* line 86, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
     main .summary p {
       color: #999; }
-  /* line 75, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+  /* line 90, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
   main .highlight {
     background-color: white; }
-    /* line 77, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+    /* line 92, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
     main .highlight code {
       font-size: 0.625em;
       font-family: 'Roboto Mono', monospace; }
-  /* line 82, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+  /* line 97, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
   main .tags-archive {
     padding: 0 0.725em; }
-    /* line 84, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+    /* line 99, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
     main .tags-archive article {
       padding-left: 0; }
   @media screen and (min-width: 40em) {
-    /* line 89, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+    /* line 104, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
     main .summary {
       float: left;
       display: block;
@@ -1190,9 +1203,13 @@ main {
         margin-right: 0; }
       /* line 83, /Users/nickrttn/.rvm/gems/ruby-2.2.2/gems/neat-1.7.2/app/assets/stylesheets/grid/_omega.scss */
       main .summary:nth-child(2n+1) {
-        clear: left; } }
+        clear: left; }
+    /* line 109, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+    main .about img {
+      max-width: 50%;
+      height: auto; } }
 
-/* line 96, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+/* line 117, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
 footer {
   max-width: 68em;
   margin-left: auto;
@@ -1203,7 +1220,7 @@ footer {
     clear: both;
     content: "";
     display: table; }
-  /* line 99, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+  /* line 120, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
   footer .copyright, footer nav {
     float: left;
     display: block;
@@ -1212,20 +1229,20 @@ footer {
     /* line 89, /Users/nickrttn/.rvm/gems/ruby-2.2.2/gems/neat-1.7.2/app/assets/stylesheets/grid/_span-columns.scss */
     footer .copyright:last-child, footer nav:last-child {
       margin-right: 0; }
-  /* line 104, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+  /* line 125, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
   footer nav ul li {
     display: inline-block;
     margin-right: 0.725em; }
-  /* line 110, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+  /* line 131, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
   footer p {
     color: #ccc; }
-    /* line 112, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+    /* line 133, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
     footer p a {
       font-family: 'ionicons';
       padding: 0 0 0 .25em;
       color: #ccc; }
   @media screen and (min-width: 40em) {
-    /* line 119, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+    /* line 140, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
     footer .copyright, footer nav {
       float: left;
       display: block;
@@ -1237,7 +1254,7 @@ footer {
 
 /* Navigation */
 /* Overlay style */
-/* line 128, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+/* line 149, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
 .overlay {
   position: fixed;
   width: 100%;
@@ -1247,7 +1264,7 @@ footer {
   background: rgba(216, 0, 0, 0.9); }
 
 /* Overlay closing cross */
-/* line 138, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+/* line 159, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
 .overlay .overlay-close {
   position: absolute;
   right: 0;
@@ -1264,7 +1281,7 @@ footer {
   padding: .5em .75em; }
 
 /* Menu style */
-/* line 155, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+/* line 176, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
 .overlay nav {
   text-align: center;
   position: relative;
@@ -1274,7 +1291,7 @@ footer {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%); }
 
-/* line 165, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+/* line 186, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
 .overlay ul {
   list-style: none;
   padding: 0;
@@ -1283,14 +1300,14 @@ footer {
   height: 100%;
   position: relative; }
 
-/* line 174, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+/* line 195, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
 .overlay ul li {
   display: block;
   height: 20%;
   height: calc(100% / 5);
   min-height: 54px; }
 
-/* line 181, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+/* line 202, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
 .overlay ul li a {
   font-weight: 300;
   display: block;
@@ -1298,32 +1315,32 @@ footer {
   -webkit-transition: color 0.2s;
   transition: color 0.2s; }
 
-/* line 189, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+/* line 210, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
 .overlay ul li a:hover,
 .overlay ul li a:focus {
   color: #333; }
 
 /* Effects */
-/* line 195, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+/* line 216, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
 .overlay-hugeinc {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
   transition: opacity 0.5s, visibility 0s 0.5s; }
 
-/* line 202, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+/* line 223, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
 .overlay-hugeinc.open {
   opacity: 1;
   visibility: visible;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s; }
 
-/* line 209, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+/* line 230, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
 .overlay-hugeinc nav {
   -webkit-perspective: 1200px;
   perspective: 1200px; }
 
-/* line 214, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+/* line 235, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
 .overlay-hugeinc nav ul {
   opacity: 0.4;
   -webkit-transform: translateY(-25%) rotateX(35deg);
@@ -1331,23 +1348,23 @@ footer {
   -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
   transition: transform 0.5s, opacity 0.5s; }
 
-/* line 222, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+/* line 243, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
 .overlay-hugeinc.open nav ul {
   opacity: 1;
   -webkit-transform: rotateX(0deg);
   transform: rotateX(0deg); }
 
-/* line 228, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+/* line 249, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
 .overlay-hugeinc.close nav ul {
   -webkit-transform: translateY(25%) rotateX(-35deg);
   transform: translateY(25%) rotateX(-35deg); }
 
 @media screen and (max-height: 30.5em) {
-  /* line 234, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+  /* line 255, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
   .overlay nav {
     height: 70%;
     font-size: 34px; }
 
-  /* line 238, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
+  /* line 259, /Users/nickrttn/Developer/portfolio/source/assets/stylesheets/_global.scss */
   .overlay ul li {
     min-height: 34px; } }
