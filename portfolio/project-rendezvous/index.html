@@ -26,7 +26,27 @@
         
         <iframe src="https://player.vimeo.com/video/117585029?color=d80000&amp;title=0&amp;byline=0&amp;portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
         
-        <p>Rendezvous is an application aimed at backpackers. It enables offline social interaction through the use of iBeacons. We built the actual application using Meteor.js and we had it working for iPhone. Sadly, Developer accounts are quite expensive, so this application will not be released.</p>
+        <p>Rendezvous is an application aimed at backpackers. It enables offline social interaction through the use of iBeacons. We built the actual application using Meteor.js and we had it working for iPhone. Sadly, Developer accounts are quite expensive, so this application will not be released. Here's a code snippet:</p>
+        
+        <pre class="highlight javascript"><code><span class="kd">var</span> <span class="nx">requireLogin</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+          <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">Meteor</span><span class="p">.</span><span class="nx">user</span><span class="p">())</span> <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="s1">'login'</span><span class="p">);</span>
+          <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">checkUserType</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">Session</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'hostelId'</span><span class="p">))</span> <span class="p">{</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="s1">'nfcId'</span><span class="p">);</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+              <span class="k">this</span><span class="p">.</span><span class="nx">next</span><span class="p">();</span>
+            <span class="p">}</span>
+          <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">checkUserType</span><span class="p">)</span> <span class="p">{</span>
+              <span class="nx">Session</span><span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">'hostelId'</span><span class="p">,</span> <span class="nx">Meteor</span><span class="p">.</span><span class="nx">user</span><span class="p">().</span><span class="nx">_id</span><span class="p">);</span>
+              <span class="k">this</span><span class="p">.</span><span class="nx">next</span><span class="p">();</span>
+          <span class="p">}</span>
+        <span class="p">};</span>
+        
+        <span class="nx">Router</span><span class="p">.</span><span class="nx">onBeforeAction</span><span class="p">(</span><span class="nx">requireLogin</span><span class="p">);</span>
+        </code></pre>
+        
+        <p>You can find the whole project on <a href="https://github.com/nickrttn/rendezvous">Github</a>. Feel free to fork, change, redistribute.</p>
         <h4>Tags</h4>
         <p class='tags'>
           <a href="/portfolio/tags/agile">agile</a> ::
